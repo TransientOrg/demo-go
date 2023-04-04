@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 const (
-	productPath string    = "/tmp/products.json"
+	productPath string = "/tmp/products.json"
 	sellerPath  string = "/tmp/sellers.json"
 )
 
@@ -17,9 +17,9 @@ func main() {
 	var i GenericInterface
 	i = &s
 
-	givenCity     := "Gotham"
+	givenCity := "Gotham"
 
-	switch i.(type)    {
+	switch i.(type) {
 	case interface{}:
 		fmt.Println("What to do")
 	case Product:
